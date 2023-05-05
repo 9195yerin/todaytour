@@ -1,0 +1,757 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #363636;
+  overflow-x: hidden;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+  line-height: 0;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 250px;
+}
+header::after {
+  content: "";
+  display: block;
+  background-color: #aae0e6;
+  width: 100%;
+  height: 60px;
+  margin-top: -50px;
+}
+.header-top {
+  width: 1200px;
+  height: 130px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.logo {
+  float: left;
+  cursor: pointer;
+}
+.search-box {
+  float: right;
+  position: relative;
+}
+.search-box > input {
+  width: 600px;
+  height: 50px;
+  border: 2px solid #aae0e6;
+  border-radius: 22px;
+  padding: 10px 0 0 20px;
+  outline: none;
+}
+.search-box > input::placeholder {
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 1.563rem; /*25pt*/
+}
+.search-box > img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 8px;
+  right: 30px;
+  cursor: pointer;
+}
+
+/* navigation */
+.header-nav {
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header-nav > ul {
+  width: 100%;
+  height: 60px;
+}
+.header-nav > ul > li {
+  float: left;
+  width: 200px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.header-nav > ul > li > a {
+  display: block;
+  font-size: 1.25rem; /*20pt*/
+  font-weight: 700; /*bold*/
+}
+.header-nav > ul > li > a:hover {
+  color: #aae0e6;
+}
+.sub-menu {
+  width: 1200px;
+  height: 60px;
+  padding-top: 20px;
+  opacity: 0;
+  display: none;
+}
+.sub-menu > li {
+  float: left;
+  margin-top: 16px;
+  margin-left: 20px;
+}
+.header-nav > ul > li:nth-child(4) .sub-menu {
+  margin-left: 20px;
+}
+.sub-menu > li:hover {
+  text-decoration: underline;
+}
+.sub-menu > li > a {
+  display: block;
+  font-size: 1.125rem; /*18pt*/
+  font-weight: 500; /*medium*/
+}
+.header-nav > ul > li:hover .sub-menu {
+  opacity: 1;
+  display: block;
+  transition: 0.5s;
+}
+
+/* main */
+img {
+  display: block;
+}
+main {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.slide-wrap {
+  width: 1920px;
+  margin: 0 auto;
+  height: 800px;
+  position: relative;
+}
+.slide {
+  height: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slide > button {
+  width: 150px;
+  height: 55px;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.7;
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 1.4rem; /*22.4pt*/
+  font-weight: 200; /*light*/
+  position: absolute;
+  bottom: 85px;
+  right: 370px;
+  cursor: pointer;
+}
+.slide > button > span::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url("../image/icon/main_fly.png");
+  margin-left: 110px;
+  margin-top: -20px;
+}
+.slide > button:hover ::after {
+  margin-left: 120px;
+  margin-top: -30px;
+  transition: 0.3s;
+}
+
+/* section1 */
+.section1 {
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+.section1 > div {
+  text-align: center;
+  position: relative;
+  margin-bottom: 25px;
+}
+.section1 > div > img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 440px;
+}
+.section1 > div > h2 {
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 2.4rem; /*38.4pt*/
+  color: #7ab2b8;
+}
+.section1-nav {
+  height: 75px;
+}
+.section1-nav > ul > li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 35px;
+  position: relative;
+}
+.section1-nav > ul > li > a {
+  font-size: 1.4rem; /*22.4pt*/
+  font-weight: 500; /*medium*/
+  margin-top: 50px;
+}
+.section1-nav > ul > li > a:hover {
+  color: #363636;
+}
+.section1-nav > ul > li > a > span::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #7ab2b8;
+  margin-top: 3px;
+}
+.section1-nav > ul > li:hover a > span::after {
+  width: 100%;
+  transition: 0.5s;
+}
+.section1-nav > ul > li > img {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  opacity: 0;
+}
+.section1-nav > ul > li:hover img {
+  display: block;
+  position: absolute;
+  left: 35%;
+  top: -70%;
+  opacity: 1;
+  transition: 0.3s;
+}
+.section1-product {
+  margin-top: 60px;
+}
+.section1-product > div {
+  float: left;
+}
+.section1-product-box > h3 {
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 1.875rem; /*30pt*/
+  color: #7ab2b8;
+  text-align: left;
+}
+.section1-product-box > div {
+  position: relative;
+  cursor: pointer;
+}
+.section1-product-box > div > img {
+  width: 590px;
+  height: 440px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+.section1-product > div:first-child img {
+  margin-right: 20px;
+}
+.section1-product-txt {
+  width: 460px;
+  height: 300px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 25px;
+  position: absolute;
+  top: 70px;
+  left: 65px;
+  opacity: 0;
+}
+.section1-product-txt > h4 {
+  font-size: 1.625rem; /*26pt*/
+  font-weight: 700; /*bold*/
+  text-align: left;
+}
+.section1-product-txt > p {
+  font-size: 1.125rem; /*18pt*/
+  font-weight: 400; /*regular*/
+  margin-top: 25px;
+  text-align: left;
+}
+.section1-product-txt > h4:last-child {
+  font-size: 1.625rem; /*26pt*/
+  font-weight: 700; /*bold*/
+  margin-top: 60px;
+  margin-left: 230px;
+}
+.section1-product-box > div > img {
+  filter: brightness(100%);
+}
+.section1-product-box > div:hover img {
+  filter: brightness(80%);
+}
+.section1-product-box > div:hover .section1-product-txt {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* section2 */
+.section2 {
+  width: 1200px;
+  height: 620px;
+  margin: 0 auto;
+  margin-top: 110px;
+}
+.section2 > div {
+  position: relative;
+}
+.section2 > div:first-child > img {
+  width: 35px;
+  height: 35px;
+}
+.section2 > div > h2 {
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 2.4rem; /*38.4pt*/
+  color: #7ab2b8;
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+.section2-review > img {
+  margin-top: 25px;
+  border-radius: 10px;
+}
+.section2-review-txt {
+  width: 620px;
+  height: 450px;
+  background-color: #fff;
+  border: 5px solid #7edce7;
+  border-radius: 5px;
+  float: right;
+  margin-top: -500px;
+  padding: 50px 0 0 50px;
+}
+.section2-review-txt > h4 {
+  font-size: 1.625rem; /*26pt*/
+  font-weight: 500; /*medium*/
+}
+.section2-review-txt > span::after {
+  content: "";
+  display: block;
+  width: 510px;
+  height: 1px;
+  background-color: #d5d6d6;
+  margin: 10px 0;
+}
+.section2-review-txt > h5 {
+  font-size: 1.4rem; /*22.4pt*/
+  font-weight: 700; /*bold*/
+}
+.section2-review-txt > h6 {
+  font-size: 1.25rem; /*20pt*/
+  font-weight: 400; /*regular*/
+}
+.section2-review-txt > p {
+  float: right;
+  margin-top: 8px;
+  margin-right: 40px;
+  font-size: 1.125rem; /*18pt*/
+  font-weight: 400; /*regular*/
+}
+.section2-review-txt > p:last-child {
+  float: left;
+}
+.section2-review-btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #999;
+  color: #fff;
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 1.375rem; /*22pt*/
+  padding-top: 5px;
+  margin-top: 35px;
+  margin-left: 370px;
+  cursor: pointer;
+}
+.section2-review-btn:hover {
+  border: 3px solid #999;
+  background-color: #fff;
+  color: #363636;
+  transition: 0.5s;
+}
+
+/* section3 */
+.section3 {
+  width: 1200px;
+  height: 460px;
+  margin: 0 auto;
+  margin-top: 110px;
+}
+.section3 > div {
+  position: relative;
+}
+.section3 > div:first-child > img {
+  width: 35px;
+  height: 35px;
+}
+.section3 > div > h2 {
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 2.4rem; /*38.4pt*/
+  color: #7ab2b8;
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+.section3-img > div {
+  float: left;
+  margin-top: 25px;
+  position: relative;
+  cursor: pointer;
+}
+.section3-img > div > img {
+  margin-right: 10px;
+  border-radius: 10px;
+  filter: brightness(100%);
+}
+.section3-img > div > img:last-child {
+  margin-right: 0;
+}
+.section3-box {
+  width: 330px;
+  height: 320px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding-top: 30px;
+  padding-left: 8px;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  opacity: 0;
+}
+.section3-box > h4 {
+  font-size: 1.625rem; /*26pt*/
+  font-weight: 700; /*bold*/
+}
+.section3-box > p {
+  font-size: 1.125rem; /*18pt*/
+  font-weight: 400; /*regular*/
+  margin-top: 20px;
+}
+.section3-box > h4:last-child {
+  margin-left: 145px;
+  margin-top: 100px;
+}
+.section3-img > div:hover img {
+  filter: brightness(80%);
+}
+.section3-img > div:hover .section3-box {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* section4 */
+.section4 {
+  width: 1200px;
+  height: 490px;
+  margin: 0 auto;
+  margin-top: 110px;
+}
+.section4 > div {
+  position: relative;
+}
+.section4 > div:first-child > img {
+  width: 35px;
+  height: 35px;
+}
+.section4 > div > h2 {
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 2.4rem; /*38.4pt*/
+  color: #7ab2b8;
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+.section4-cont {
+  margin-top: 25px;
+  display: block;
+}
+.section4-cont > iframe {
+  border: none;
+}
+.section4-cont > div {
+  float: right;
+}
+.section4-box {
+  width: 400px;
+  height: 430px;
+  background-color: #aae0e6;
+  padding-top: 30px;
+  position: relative;
+}
+.section4-box > span::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/icon/sec4_next.png");
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.section4-box > h4 {
+  text-align: right;
+  margin-right: 70px;
+  font-size: 1.625rem; /*26pt*/
+  font-weight: 500; /*medium*/
+}
+.section4-box-txt {
+  width: 380px;
+  height: 330px;
+  background-color: #fff;
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  padding: 35px 0 0 35px;
+}
+.section4-box-txt > h6 {
+  font-size: 1.25rem; /*20pt*/
+  font-weight: 500; /*medium*/
+}
+.section4-box-txt > p {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 1.125rem; /*18pt*/
+  font-weight: 400; /*regular*/
+}
+.section4-box-btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #999;
+  color: #fff;
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 1.375rem; /*22pt*/
+  padding-top: 5px;
+  margin-top: 30px;
+  margin-left: 160px;
+  cursor: pointer;
+}
+.section4-box-btn:hover {
+  border: 3px solid #999;
+  background-color: #fff;
+  color: #363636;
+  transition: 0.5s;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #ebedf3;
+  margin-top: 110px;
+}
+.footer-top {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+}
+.footer-top > ul {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-top > ul > li {
+  float: left;
+}
+.footer-top > ul > li > a {
+  width: 240px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.125rem; /*18pt*/
+  font-weight: 500; /*medium*/
+  border-left: 1px solid #999;
+}
+.footer-top > ul > li > a:last-child {
+  border-right: 1px solid #999;
+}
+.footer-bottom {
+  width: 1200px;
+  height: 170px;
+  margin: 0 auto;
+  padding: 35px;
+}
+.footer-bottom > div {
+  float: left;
+}
+.footer-bottom > div > p {
+  font-size: 1.125rem; /*18pt*/
+  font-weight: 500; /*medium*/
+}
+.footer-bottom > div > h4 {
+  font-size: 1.5rem; /*24pt*/
+  font-weight: 500; /*medium*/
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.footer-bottom > div > button {
+  width: 165px;
+  height: 35px;
+  background-color: #fff;
+  border: 1px solid #403f3f;
+  border-radius: 18px;
+  margin-top: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.footer-bottom > div > button:hover {
+  background-color: #283d40;
+  color: #fff;
+  border: none;
+}
+.footer-bottom > div > button > span::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../image/icon/footer/footer_icon_call.png");
+  position: absolute;
+  top: 8px;
+  left: 35px;
+}
+.footer-bottom > div > button:hover ::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../image/icon/footer/footer_icon_call_white.png");
+  position: absolute;
+  top: 10px;
+  left: 35px;
+}
+.footer-bottom > div:nth-child(2) {
+  margin-left: 100px;
+}
+.footer-bottom > div:nth-child(2) > p {
+  font-size: 1.125rem; /*18pt*/
+  font-weight: 500; /*medium*/
+}
+.footer-bottom > div:nth-child(2) > p:nth-child(2) {
+  font-weight: 200; /*light*/
+  margin-top: 8px;
+}
+.footer-info {
+  width: 100%;
+  height: 280px;
+  margin: 0 auto;
+}
+.footer-info-top {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #999;
+}
+.footer-info-top > div {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-info-top > div > ul > li {
+  float: left;
+  margin-left: 25px;
+  margin-top: 12px;
+  font-size: 1.125rem; /*18pt*/
+  font-weight: 400; /*regular*/
+}
+.footer-sns {
+  float: right;
+  margin-top: 5px;
+}
+.footer-sns > a {
+  float: left;
+  margin-left: 5px;
+}
+.footer-info-bottom {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 25px;
+  font-size: 1.125rem; /*18pt*/
+  font-weight: 200; /*light*/
+}
+.footer-info-bottom > div {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-info-bottom > p {
+  float: left;
+  margin-right: 30px;
+}
+.footer-info-bottom > p:nth-child(6) {
+  margin-left: 124px;
+  margin-top: 10px;
+}
+.footer-info-bottom > p:nth-child(7) {
+  margin-top: 10px;
+}
+.footer-info-bottom > p:nth-child(8) {
+  margin-top: 10px;
+}
+.footer-info-bottom > p:nth-child(9) {
+  margin-top: 50px;
+  font-size: 0.875rem; /*14pt*/
+  font-weight: 200; /*light*/
+}
+.footer-info-bottom > p:nth-child(10) {
+  margin-top: 15px;
+  font-size: 0.875rem; /*14pt*/
+  font-weight: 200; /*light*/
+}
+.footer-sns > a:nth-child(1) {
+  background-image: url("../image/icon/footer/facebook-hover.png");
+}
+.footer-sns > a:nth-child(1):hover img {
+  opacity: 0;
+}
+.footer-sns > a:nth-child(2) {
+  background-image: url("../image/icon/footer/inst-hover.png");
+}
+.footer-sns > a:nth-child(2):hover img {
+  opacity: 0;
+}
+.footer-sns > a:nth-child(3) {
+  background-image: url("../image/icon/footer/blog-hover.png");
+}
+.footer-sns > a:nth-child(3):hover img {
+  opacity: 0;
+}
+.footer-sns > a:nth-child(4) {
+  background-image: url("../image/icon/footer/youtube-hover.png");
+}
+.footer-sns > a:nth-child(4):hover img {
+  opacity: 0;
+}
